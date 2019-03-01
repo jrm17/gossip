@@ -1,6 +1,6 @@
 package es.mango;
 
-public class MangoMain extends MangoUtil {
+public class MangoMain {
     public static void main(String[] args) {
         MangoGossips mg;
         try {

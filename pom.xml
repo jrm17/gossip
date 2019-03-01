@@ -10,25 +10,19 @@
     <packaging>jar</packaging>
 
     <properties>
-        <jdk-version>1.8</jdk-version>
+        <jdk-version>8</jdk-version>
     </properties>
 
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
-                    <compilerVersion>${jdk-version}</compilerVersion>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>${jdk-version}</source>
+                    <target>${jdk-version}</target>
                 </configuration>
             </plugin>
         </plugins>
